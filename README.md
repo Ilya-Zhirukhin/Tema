@@ -1,4 +1,7 @@
 # s1-Ilya-Zhirukhin
+проект перезаливался, основа с полноценными коммитами длинною в пол года, находиться тут
+https://github.com/Ilya-Zhirukhin/s1-Ilya-Zhirukhin
+
 s1-Ilya-Zhirukhin created by GitHub Classroom
 ## Description
 Проект пародия тимса, имеет:
