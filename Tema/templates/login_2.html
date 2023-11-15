@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {{ super() }}
+
+    {#    <form action="/login" method="post" class="form-contact">#}
+    {#        <p><label>Имя: </label> <input type="text" name="username" value="" requied/>#}
+    {#        <p><label>Пароль: </label> <input type="password" name="psw" value="" requied/>#}
+    {#        <p><input type="submit" value="Войти"/>#}
+    {#    </form>#}
+    {##}
+
+    {% for cat,msg in get_flashed_messages(True) %}
+        <div class="flash {{ cat }}"> {{ msg }}</div>
+    {% endfor %}
+
+
+    <div class="main_div_id_login">
+
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="/login" method="post" class="form-contact">
+
+            <div class="user-box">
+                <input type="text" name="email" required="">
+                <label>Email</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" name="psw" required="">
+                <label>Пароль:</label>
+            </div>
+
+            <div class="user-box">
+                <p><input type="submit" value="Submit"/>
+
+            </div>
+
+
+            <div class="user-box">
+                <a href="{{ url_for('register') }}">Регистрация</a>
+            </div>
+
+
+
+
+
+        </form>
+
+            <form action="/login2" method="post" class="form-contact">
+                <div class="user-box">
+                <p class="ppp"><input type="submit" value="\m/  Github  \_/ "/>
+                </div>
+
+            </form>
+
+
+
+            </div>
+
+
+    </div>
+
+{% endblock %}>
