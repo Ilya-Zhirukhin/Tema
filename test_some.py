@@ -10,8 +10,8 @@ import uuid
 
 def test_home_page(client):
     # Создание и сохранение пользователя в базе данных перед выполнением запроса
-    base_username = '212142124241141124234'
-    base_email = 'iluu1221124214312423@mail.ru'
+    base_username = '212142141124234'
+    base_email = 'iluu1221312423@mail.ru'
     username = base_username
     email = base_email
 
@@ -53,9 +53,9 @@ def test_invalid_route(client):
 def test_register(client):
     response = client.post('/register', data={
         'name': 'John112413221424',
-        'last_name': 'Doe11421242112424132',
-        'username': 'johndoe11242421241231244',
-        'email': 'johndoe411312421424122412@example.com',
+        'last_name': 'Doe114212424132',
+        'username': 'johndoe121241231244',
+        'email': 'johndoe411324122412@example.com',
         'password': 'password',
         'confirm_password': 'password',
         'student_or_teacher': 'student'
